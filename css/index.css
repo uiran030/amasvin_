@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+#center .centerOuter .centerInner  .slide2, .slide3, .slide4, .slide5{display: none;}
+
+#center .micenter p{
+    margin: 100px 0;
+    text-align: center;
+    font-size: 19px;
+    color:#acaeb0;
+    font-weight: bold;
+}
+#center .micenter .micenterimg{
+    width:51%;
+    margin:0 auto;
+    height:776px;
+    position:relative;
+}
+#center .micenter .micenterimg > img{
+    border:2px solid #f1f1f1;
+}
+#center .micenter .micenterimg img:nth-child(1){
+    position:absolute;
+    bottom: 10px; left: 0;
+    border: none;
+}
+#center .micenter .micenterimg img:nth-child(2){
+    position:absolute;
+    top:0; left:90px;
+}
+#center .micenter .micenterimg img:nth-child(3){
+    position:absolute;
+    bottom: 20px; left: 90px;
+}
+#center .micenter .micenterimg img:nth-child(4){
+    position:absolute;
+    top:0; left:386px;
+}
+#center .micenter .micenterimg img:nth-child(5){
+    position:absolute;
+    bottom: 80px; left:386px;
+}
+#center .micenter .micenterimg img:nth-child(6){
+    position:absolute;
+    top:0; right:0px;
+}
+#center .micenter .micenterimg img:nth-child(7){
+    position:absolute;
+    bottom:20px; right:0;
+}
+
+#center .downcenter {
+    background-image: linear-gradient(90deg, #a6bbe3 0% 50%, #edf6ff 50% 100%);
+    overflow: hidden;
+    margin-top:100px;
+}
+#center .downcenter .down{
+    max-width:1200px;
+    margin:0 auto;
+    height:460px;
+    position:relative;
+    overflow: hidden;
+}
+#center .downcenter .down img{
+    position:absolute;
+    top:50%; left:50%;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+}
+#center .downcenter .leftabtn{
+    float: left;
+    width:50%;
+    position:relative;
+    padding-left: 150px;
+    padding-right: 130px;
+    transform: translateY(150px);
+}
+#center .downcenter .leftabtn p:nth-child(1){
+    color:rgb(218,227,243);
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#center .downcenter .leftabtn p:nth-child(2){
+    margin-top:5px;
+    color:white;
+    font-weight: bold;
+}
+#center .downcenter .leftabtn p:nth-child(3){
+    text-align: right;
+    color:white;
+    font-weight: bold;
+    margin-top:10px;
+    font-size: 14px;
+}
+
+#center .downcenter .righttext {
+    float: right;
+    width:50%;
+    position:relative;
+}
+#center .downcenter .righttext p{
+    position:absolute;
+    top:200px; left:150px;
+    font-size: 20px;
+}
+
+#center .lastcenter{
+    max-width:1200px;
+    margin:200px auto 100px;
+    overflow: hidden;
+}
+#center .lastcenter >div{
+    float: left;
+    width:50%;
+    text-align: center;
+}
+#center .lastcenter >div > p:nth-child(1){
+    margin-bottom: 30px;
+}

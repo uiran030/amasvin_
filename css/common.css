@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+/* 헤더구역 */
+#header {
+    padding-top:20px;
+    margin:0 auto;
+    width:65%; 
+    overflow: hidden;
+    position: relative;
+}
+#header .head{ margin:0 auto;}
+#header .head h1{float: left;}
+#header .nav {float: left;}
+#header .nav li {
+    float: left;
+    padding:25px 7px 7px 90px;
+    font-size: 13px;
+    color:#5a4f3a;
+    font-weight: bold;
+}
+#header .nav li:nth-child(1){
+    color:#3d9be9;
+}
+#header .snsbox {float:right;}
+#header .snsbox img{
+    padding:25px 15px;
+}
+
+
+.depth2 {display: none;}
+
+/* 풋터구역 */
+#footer{
+    background-color: #edf6ff;
+    padding:100px 0;
+}
+.foots{
+    max-width: 1200px;
+    margin:0 auto;
+    position:relative;
+    text-align: center;
+}
+.foots > h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color:#898e93;
+    letter-spacing: 5px;
+}
+.foots p {
+    font-size: 14px;
+    color:#999d9e;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.foots p:nth-child(1) > span:nth-child(1){margin-right: 20px;}
+.foots p:nth-child(2) > span:nth-child(1){margin-right: 20px;}
+.foots p:nth-child(2) > span:nth-child(2){margin-right: 20px;}
+.foots p:nth-child(3) > span:nth-child(1){margin-right: 20px;}
