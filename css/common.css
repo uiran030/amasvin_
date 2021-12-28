@@ -5,29 +5,62 @@
     padding-top:20px;
     margin:0 auto;
     width:65%; 
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
 }
 #header .head{ margin:0 auto;}
 #header .head h1{float: left;}
 #header .nav {float: left;}
-#header .nav li {
+#header .nav .depth1 > li {
+    position:relative;
     float: left;
     padding:25px 7px 7px 90px;
     font-size: 13px;
     color:#5a4f3a;
     font-weight: bold;
 }
-#header .nav li:nth-child(1){
+#header .nav .depth1 > li:hover > a {
+    color:#3d9be9;
+    transition: all 0.3s;
+}
+#header .nav .depth1 > li:nth-child(1){
     color:#3d9be9;
 }
+#header .nav .depth2 {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    position:absolute;
+    top:100%; left:40px;
+    width:100%;
+    text-align: center;
+    display: none;
+    height: auto;
+    z-index: 9999999;
+}
+#header .nav .depth2 > li {
+    padding:5px;
+}
+#header .nav .depth1> li:hover .depth2 {display: block;}
+.depth2 > li > a {
+    font-size: 13px;
+    display:block;
+}
+.depth2 > li:hover > a {
+    color:#3d9be9;
+    transition: all 0.5s;
+}
+/* snsbox */
 #header .snsbox {float:right;}
 #header .snsbox img{
     padding:25px 15px;
 }
-
-
-.depth2 {display: none;}
+#header .snsbox a img:nth-child(2){display: none;}
+#header .snsbox a:nth-child(1):hover img:nth-child(1){display: none;}
+#header .snsbox a:nth-child(1):hover img:nth-child(2){display: inline-block;}
+#header .snsbox a:nth-child(2):hover img:nth-child(1){display: none;}
+#header .snsbox a:nth-child(2):hover img:nth-child(2){display: inline-block;}
+#header .snsbox a:nth-child(3):hover img:nth-child(1){display: none;}
+#header .snsbox a:nth-child(3):hover img:nth-child(2){display: inline-block;}
 
 /* 풋터구역 */
 #footer{
