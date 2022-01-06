@@ -40,7 +40,8 @@
 #header .nav .depth2 > li {
     padding:5px;
 }
-#header .nav .depth1> li:hover .depth2 {display: block;}
+#header .nav .depth1> li.on .depth2 {display: block;}
+/* #header .nav .depth1> li:hover .depth2 {display: block;} */
 .depth2 > li > a {
     font-size: 13px;
     display:block;
@@ -54,13 +55,14 @@
 #header .snsbox img{
     padding:25px 15px;
 }
-#header .snsbox a img:nth-child(2){display: none;}
-#header .snsbox a:nth-child(1):hover img:nth-child(1){display: none;}
-#header .snsbox a:nth-child(1):hover img:nth-child(2){display: inline-block;}
-#header .snsbox a:nth-child(2):hover img:nth-child(1){display: none;}
+/* #header .snsbox a img {display: none;}
+#header .snsbox a img.on {display: inline-block;} */
+/* #header .snsbox a:nth-child(1):hover img:nth-child(1){display: none;} */
+/* #header .snsbox a:nth-child(1):hover img:nth-child(2){display: inline-block;} */
+/* #header .snsbox a:nth-child(2):hover img:nth-child(1){display: none;}
 #header .snsbox a:nth-child(2):hover img:nth-child(2){display: inline-block;}
 #header .snsbox a:nth-child(3):hover img:nth-child(1){display: none;}
-#header .snsbox a:nth-child(3):hover img:nth-child(2){display: inline-block;}
+#header .snsbox a:nth-child(3):hover img:nth-child(2){display: inline-block;} */
 
 /* 풋터구역 */
 #footer{
