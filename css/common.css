@@ -8,8 +8,7 @@
     /* overflow: hidden; */
     position: relative;
 }
-#header .head{ margin:0 auto;}
-#header .head h1{float: left;}
+#header h1{ float: left;}
 #header .nav {float: left;}
 #header .nav .depth1 > li {
     position:relative;

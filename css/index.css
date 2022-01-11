@@ -1,6 +1,42 @@
 @charset "utf-8";
 
-#center .centerOuter .centerInner  .slide2, .slide3, .slide4, .slide5{display: none;}
+/* #center .centerOuter .centerInner  .slide2, .slide3, .slide4, .slide5{display: none;} */
+.centerOuter {position:relative;}
+.centerOuter .slick-arrow {
+    position:absolute; top:50%; transform:translateY(-50%);
+    font-size:70px; color:#fff; cursor:pointer; border:none; background: none; }
+.centerOuter .slick-arrow.slick-prev { left:30px; z-index:9999;}
+.centerOuter .slick-arrow.slick-next { right:30px; }
+.centerOuter .slick-dots { 
+    position:absolute; 
+    bottom:10px; 
+    left:50%;
+    transform:translate(-50%);
+    width:500px;
+}
+.centerOuter .slick-dots li { 
+    display:inline-block;
+    width:18%;
+    height:2px;
+    background: #999;
+    position:relative;
+    margin:5px;
+}
+.centerOuter .slick-dots li button {
+    width:0px;
+    height: 2px;
+    border: none;
+    background:#fff; 
+    color:#fff; 
+    overflow:hidden;
+    cursor:pointer;
+    position:absolute; left: 0; top:0;
+    transition: all 0s;
+}
+.centerOuter .slick-dots li.slick-active button{
+    width:100%;
+    transition: all 2s;
+}
 
 #center .micenter p{
     margin: 100px 0;
