@@ -9,3 +9,11 @@ $('.centerInner').slick({
     dots:true,
     fade:true
 })
+
+$(window).on('scroll', function(){
+    var sct = $(this).scrollTop()
+    if (sct>300 && !$('.micenter').hasClass('op')) {
+        $('.micenter').addClass('op')
+        $('#center .micenter .micenterimg').css({opacity:'0'}).animate({opacity:'1'}, 2000)
+    }
+})
